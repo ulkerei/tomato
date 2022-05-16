@@ -1,0 +1,45 @@
+.crazy {
+  width: 100%;
+  background-image: linear-gradient(90deg, red 10%, orange 25%, yellow 40%, green 60%, blue 75%, purple 90%);
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.crazy__text {
+  margin: 20px;
+  padding: 0;
+  max-width: 300px;
+  color: #111;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 80px;
+  text-align: center;
+}
+
+.crazy__video {
+  height: 140%;
+  width: 40vw;
+  border: 0;
+  border-radius: 50%;
+  overflow: visible;
+  position: absolute;
+  align-self: center;
+  z-index: 3;
+  left: 28vw;
+}
+
+@media screen and (max-width: 1140px) {
+  .crazy__text {
+    font-size: calc(80px - (1140px - 100vw)/14);
+    max-width: calc(300px - (1140px - 100vw)/4);
+    margin: calc(20px - (1140px - 100vw)/40);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .crazy__text {
+    font-size: 21px;
+    margin: 0;
+  }
+}

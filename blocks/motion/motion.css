@@ -1,0 +1,38 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes walk {
+  0% {
+    transform: none;
+  }
+  30% {
+    transform: translate(88vw);
+  }
+  60% {
+    transform: translate(88vw, 88vh);
+  }
+  70% {
+    transform: translate(0, 88vh);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes blink {
+  0% {
+    transform: none;
+  }
+  10% {
+    transform: scale(1, .8);
+  }
+  70% {
+    transform: none;
+  }
+}

@@ -1,0 +1,49 @@
+.ai-cite {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8% 0;
+}
+
+.ai-cite__img-container {
+  width: 10vw;
+  height: 10vh;
+  opacity: 100%;
+  animation: walk 20s ease forwards infinite;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.ai-cite__img {
+  width: 100%;
+  z-index: 5;
+  animation: rotation 4s ease-in-out forwards infinite;
+}
+
+.ai-cite__header {
+  width: 90%;
+  margin: 0;
+  padding-bottom: var(--main-text-size);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: calc(var(--main-text-size)*1.5);
+  font-weight: bold;
+  color: #800;
+  text-align: center;
+  z-index: 2;
+}
+
+
+.ai-cite__paragraph {
+  width: 90%;
+  margin: 0;
+  padding: 0 0 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: var(--main-text-size);
+  font-weight: lighter;
+  color: #100;
+  z-index: 2;
+}

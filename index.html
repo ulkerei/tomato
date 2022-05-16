@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Помидорро!</title>
+  <link rel="stylesheet" href="pages/index.css">
+  <link rel="shortcut icon" href="images/tomato.ico">
+</head>
+<body class="body">
+  <header class="header" id="header">
+    <h1 class="header__heading">Безвкусный сайт о вкусном овоще!</h1>
+    <a href="#facts" class="header__eyes header__eyes_red">
+      <div class="header__eye"></div>
+      <div class="header__eye"></div>
+    </a>
+    <a href="#forms" class="header__eyes header__eyes_orange">
+      <div class="header__eye"></div>
+      <div class="header__eye"></div>
+    </a>
+    <a href="#ai-cite" class="header__eyes header__eyes_yellow">
+      <div class="header__eye"></div>
+      <div class="header__eye"></div>
+    </a>
+    <a href="#crazy" class="header__eyes header__eyes_green">
+      <div class="header__eye"></div>
+      <div class="header__eye"></div>
+    </a>
+    <a href="#pics" class="header__eyes header__eyes_blue">
+      <div class="header__eye"></div>
+      <div class="header__eye"></div>
+    </a>
+    <a href="#footer" class="header__eyes header__eyes_purple">
+      <div class="header__eye"></div>
+      <div class="header__eye"></div>
+    </a>
+  </header>
+
+  <section class="section" id="facts">
+    <div class="section__opacity">
+      <h2 class="section__hidden-heading">Странные факты о томатах</h2>
+      <ul class="facts">
+        <li class="facts__card">
+          <p class="facts__decor">*</p>
+          <p class="facts__text">Помидор был выращен ацтеками и назывался <span class="pics__span">кситомат</span> (“пышка с пупком”).</p>
+        </li>
+        <li class="facts__card">
+          <p class="facts__decor">*</p>
+          <p class="facts__text">Вес самого большого помидора, выращенного человеком, составлял <span class="pics__span">3,5 килограмма.</span> Рекордный урожай был получен в Оклахоме (США) в 1986 году.</p>
+        </li>
+        <li class="facts__card">
+          <p class="facts__decor">*</p>
+          <p class="facts__text">Немногие знают, что жизнь помидора не обязательно ограничивается одним сезоном. Если дать растению свет и тепло, оно будет жить и расти <span class="pics__span">много лет.</span></p>
+        </li>
+        <li class="facts__card">
+          <p class="facts__decor">*</p>
+          <p class="facts__text">Спелые помидоры не обязательно <span class="pics__span_color_red">красные.</span> Есть и другие: <span class="pics__span_color_pink">розовые,</span> <span class="pics__span_color_yellow">жёлтые,</span> <span class="pics__span_color_purple">фиолетовые,</span> почти <span class="pics__span_color_white">белые</span> и почти <span class="pics__span_color_black">чёрные.</span></p>
+        </li>
+        <li class="facts__card">
+          <p class="facts__decor">*</p>
+          <p class="facts__text">Насколько большим может вырасти помидорный куст? Мировой рекорд принадлежит растению, которое занимает <span class="pics__span">56,73 квадратных метров.</span></p>
+        </li>
+        <li class="facts__card">
+          <p class="facts__decor">*</p>
+          <p class="facts__text">Словом <span class="pics__span">“кетчуп”</span> первоначально называлась китайская рыбная подливка. Помидоры были добавлены в этот рецепт, а потом вытеснили рыбу.</p>
+        </li>
+        <li class="facts__card">
+          <p class="facts__decor">*</p>
+          <p class="facts__text"><span class="pics__span">“Волчий персик”</span> – это дословный перевод научного названия помидоров Lycopersicon lycopersicum.</p>
+        </li>
+        <li class="facts__card">
+          <p class="facts__decor">*</p>
+          <p class="facts__text">Листья и стебли помидора <span class="pics__span">ядовиты,</span> равно как и недозрелые плоды. Они содержат атропин и другие токсичные тропановые алкалоиды. </p>
+        </li>
+        <li class="facts__card">
+          <p class="facts__decor">*</p>
+          <p class="facts__text">Впервые в Европе итальянский врачом и ботаник Пьетр Андреа Маттиоли в 1544 году упомянул помидор, назвав растение <span class="pics__span">“pomo d'oro”</span> (“золотое яблоко”).</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="forms">
+    <form class="forms">
+      <fieldset class="forms__item forms__item_simple">
+        <h3 class="forms__heading">Заполните поля, им грустно</h3>
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" class="forms__input forms__input_name" placeholder="Авдотья">
+        <label for="select">Лучшая заметка</label>
+        <select id="select" class="forms__input forms__input_select">
+          <option value="1">Пышка с пупком</option>
+          <option value="2">Большой томат</option>
+          <option value="3">Долголетие</option>
+          <option value="4">Разноцветные плоды</option>
+          <option value="5">Помидор-захватчик</option>
+          <option value="6">Кетчуп</option>
+          <option value="7">Волчий персик</option>
+          <option value="8">Помидорный яд</option>
+          <option value="9">Золотое яблоко</option>
+        </select>
+        <label for="range">Понравлись факты?</label>
+        <input type="range" id="like" class="forms__input forms__input_like">
+        <label for="color">Выберите помидорный цвет!</label>
+        <input type="color" id="color" class="forms__input forms__input_color">
+        <label for="big-text">Попросите подсознание написать сюда текст:</label>
+        <textarea id="big-text" class="forms__input forms__input_big-text" placeholder="Я знаю, что вы делали прошлым летом"></textarea>
+      </fieldset>
+
+      <fieldset class="forms__item forms__item_other">
+        <h3 class="forms__heading">Какой цвет пойдёт помидору?</h3>
+        <ul class="forms__listing">
+          <li class="forms__list forms__list_color_green">
+            <label class="forms__checkbox-label" for="green">ЗЕЛЁНЫЙ</label>
+            <input class="forms__checkbox" type="checkbox" name="paint" id="green" value="green">
+            <div class="forms__false-chbx"><span class="forms__decor forms__decor_chbx">*</span></div>
+          </li>
+          <li class="forms__list forms__list_color_blue">
+            <label class="forms__checkbox-label" for="blue">СИНИЙ</label>
+            <input class="forms__checkbox" type="checkbox" name="paint" id="blue" value="blue">
+            <div class="forms__false-chbx"><span class="forms__decor forms__decor_chbx">*</span></div>
+          </li>
+          <li class="forms__list forms__list_color_purple">
+            <label class="forms__checkbox-label" for="purple">ФИОЛЕТОВЫЙ</label>
+            <input class="forms__checkbox" type="checkbox" name="paint" id="purple" value="purple">
+            <div class="forms__false-chbx"><span class="forms__decor forms__decor_chbx">*</span></div>
+          </li>
+          <li class="forms__list forms__list_color_pink">
+            <label class="forms__checkbox-label" for="pink">РОЗОВЫЙ</label>
+            <input class="forms__checkbox" type="checkbox" name="paint" id="pink" value="pink">
+            <div class="forms__false-chbx"><span class="forms__decor forms__decor_chbx">*</span></div>
+          </li>
+          <li class="forms__list forms__list_color_red">
+            <label class="forms__checkbox-label" for="red">КРАСНЫЙ</label>
+            <input class="forms__checkbox" type="checkbox" name="paint" id="red" value="red">
+            <div class="forms__false-chbx"><span class="forms__decor forms__decor_chbx">*</span></div>
+          </li>
+          <li class="forms__list forms__list_color_orange">
+            <label class="forms__checkbox-label" for="orange">ОРАНЖЕВЫЙ</label>
+            <input class="forms__checkbox" type="checkbox" name="paint" id="orange" value="orange">
+            <div class="forms__false-chbx"><span class="forms__decor forms__decor_chbx">*</span></div>
+          </li>
+          <li class="forms__list forms__list_color_yellow">
+            <label class="forms__checkbox-label" for="yellow">ЖЁЛТЫЙ</label>
+            <input class="forms__checkbox" type="checkbox" name="paint" id="yellow" value="yellow">
+            <div class="forms__false-chbx"><span class="forms__decor forms__decor_chbx">*</span></div>
+          </li>
+          <li class="forms__list forms__list_color_white">
+            <label class="forms__checkbox-label" for="white">БЕЛЫЙ</label>
+            <input class="forms__checkbox" type="checkbox" name="paint" id="white" value="white">
+            <div class="forms__false-chbx"><span class="forms__decor forms__decor_chbx">*</span></div>
+          </li>
+          <li class="forms__list forms__list_color_brown">
+            <label class="forms__checkbox-label" for="brown">КОРИЧНЕВЫЙ</label>
+            <input class="forms__checkbox" type="checkbox" name="paint" id="brown" value="brown">
+            <div class="forms__false-chbx"><span class="forms__decor forms__decor_chbx">*</span></div>
+          </li>
+          <li class="forms__list forms__list_color_black">
+            <label class="forms__checkbox-label" for="black">ЧЁРНЫЙ</label>
+            <input class="forms__checkbox" type="checkbox" name="paint" id="black" value="black">
+            <div class="forms__false-chbx"><span class="forms__decor forms__decor_chbx">*</span></div>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="forms__item forms__item_cutter">
+        <h3 class="forms__heading">В салат резать или кладём целиком?</h3>
+        <div class="forms__cutter">
+          <label class="forms__radio-label" for="whole">Целиком</label>
+          <input class="forms__radio forms__radio_whole" type="radio" name="cut" id="whole" value="whole" checked>
+          <input class="forms__radio forms__radio_cut" type="radio" name="cut" id="sliced" value="sliced">
+          <div class="forms__false-radio"></div>
+          <label class="forms__radio-label" for="sliced">Разрезать</label>
+          <div class="forms__cutter-glow"></div>
+        </div>
+
+        <div class="forms__buttons">
+          <h2 class="section__hidden-heading">Тыкалка помидорных кнопок</h2>
+          <button type="submit" class="forms__button"><span class="forms__decor">*</span>Отправить</button>
+          <button type="reset" class="forms__button"><span class="forms__decor">*</span>Сбросить</button>
+        </div>
+      </fieldset>
+    </form>
+  </section>
+
+  <section class="section" id="ai-cite">
+    <div class="section__opacity">
+      <div class="ai-cite">
+        <div class="ai-cite__img-container">
+          <img class="ai-cite__img" src="images/tomato.png" alt="Я томат!">
+        </div>
+        <h2 class="ai-cite__header">Помидоры не очень любят, когда их недооценивают</h2>
+        <p class="ai-cite__paragraph">В январе я начал планировать семена, которые посажу в феврале. К середине февраля у меня в стиральной машине выросли небольшие джунгли (единственное место в доме, где кошки не могли добраться до растений).</p>
+        <p class="ai-cite__paragraph">Перенесемся в март, и саженцы направляются в сад, а к августу они процветают и продолжают плодоносить. Потому что да, я выбрал индетерминантные помидоры, не зная, что это значит.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="crazy" id="crazy">
+    <h2 class="section__hidden-heading">Взрыв квадракоптера</h2>
+    <p class="crazy__text">ВЗРЫВ ВСЁ</p>
+    <iframe class="crazy__video" src="https://www.youtube.com/embed/9bUN7O9kA-8?clip=UgkxqD4kQRIQAZSiix0pSmdGyNRcXuUPzBq1&amp;clipt=ELnMBRjzigY"></iframe>
+    <p class="crazy__text">ДЕЛАЕТ КРУЧЕ!</p>
+  </section>
+
+  <section class="section" id="pics">
+    <div class="section__opacity">
+      <h2 class="section__hidden-heading">Фотки и рецепт томатного сока</h2>
+      <div class="pics">
+        <img class="pics__item pics__item_size_long" src="images/grid/long0.jpg" alt="Помидор">
+        <img class="pics__item pics__item_size_square" src="images/grid/sq1.jpg" alt="Помидор">
+        <img class="pics__item pics__item_size_x-long" src="images/grid/xlong.jpg" alt="Помидор">
+        <img class="pics__item pics__item_size_x-wide" src="images/grid/wide0.jpg" alt="Помидор">
+        <p class="pics__item pics__item_size_text">Разрезаем помидоры на несколько частей. Вырезаем сердцевину.</p>
+        <img class="pics__item" src="images/grid/any2.jpg" alt="Помидор">
+        <img class="pics__item pics__item_size_wide" src="images/grid/wide.jpg" alt="Помидор">
+        <img class="pics__item pics__item_size_x-wide" src="images/grid/xwide.jpg" alt="Помидор">
+        <p class="pics__item pics__item_size_text">Заполняем кастрюлю с толстым дном, солим, перчим.</p>
+        <img class="pics__item pics__item_size_long" src="images/grid/any0.jpg" alt="Помидор">
+        <img class="pics__item pics__item_size_square" src="images/grid/sq0.jpg" alt="Помидор">
+        <img class="pics__item pics__item_size_wide" src="images/grid/wide3.jpg" alt="Помидор">
+        <img class="pics__item" src="images/grid/small1.jpg" alt="Помидор">
+        <p class="pics__item pics__item_size_text">Добавляем стакан воды, варим 20 минут.</p>
+        <img class="pics__item" src="images/grid/small0.jpg" alt="Помидор">
+        <p class="pics__item pics__item_size_text">Измельчаем блендером, разливаем по банкам.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="footer__text">
+      <p class="footer__paragraph">Автор просто тренировался на помидорах и честно не пытался в дизайн.</p>
+      <p class="footer__paragraph">Хотя, если вам кажется, что происходящее вокруг безумие напоминает 90-е, это нормально — вам не кажется.</p>
+    </div>
+    <img src="images/JT.jpg" alt="Автор у томатов" class="footer__img">
+    <div class="footer__copyright">
+      <p class="footer__paragraph">&copy; Юлка Торшенко</p>
+      <a href="https://vk.com/ulkerei" class="footer__link" target="_blank">Заглянуть ВК</a>
+    </div>
+
+  </footer>
+</body>

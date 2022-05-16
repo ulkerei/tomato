@@ -1,0 +1,21 @@
+.body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  --main-text-size: 24px;
+}
+
+@media screen and (max-width: 793px) {
+  .body {
+    --main-text-size: calc(24px - (793px - 100vw)/50)
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .body {
+    --main-text-size: 15px;
+  }
+}

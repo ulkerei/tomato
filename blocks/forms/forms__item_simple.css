@@ -1,0 +1,24 @@
+.forms__item_simple {
+  background-image: url(../../images/barley.jpg);
+  --heading-color: #400;
+  --heading-shadow-color: #fff;
+  font-size: var(--main-text-size);
+}
+
+@media screen and (max-width: 1090px) {
+  .forms__item_simple {
+    width: calc(501px - (1090px - 100vw)/1.5);
+  }
+}
+
+@media screen and (max-width: 793px) {
+  .forms__item_simple {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .forms__item_simple {
+    width: 324px;
+  }
+}

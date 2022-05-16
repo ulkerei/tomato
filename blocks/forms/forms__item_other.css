@@ -1,0 +1,129 @@
+.forms__item_other {
+  background-image: url(../../images/art.jpg);
+  background-position: 40%;
+  --heading-color: #8cf;
+  --heading-shadow-color: #024;
+  font-size: var(--main-text-size);
+}
+
+
+.forms__listing {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.forms__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forms__checkbox-label {
+  font-size: calc(var(--main-text-size)*1.5);
+  color: var(--chbx-color-1);
+  text-shadow: 0 0 7px var(--chbx-color-2);
+}
+
+.forms__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.forms__false-chbx {
+  border: 1px solid #444;
+  background-image: radial-gradient(#ccc, #555);
+  box-shadow: 3px 3px 5px #222;
+  color: #020;
+  border-radius: 50%;
+  width: 50px;
+  height: 40px;
+  position: relative;
+}
+
+.forms__list:nth-of-type(3n+1) .forms__false-chbx{
+  margin-right: 40px;
+}
+
+.forms__list:nth-of-type(3n+2) .forms__false-chbx{
+  margin-right: 90px;
+}
+
+.forms__checkbox:checked + .forms__false-chbx {
+  background-image: radial-gradient(var(--chbx-color-1), var(--chbx-color-2));
+}
+
+.forms__checkbox:focus + .forms__false-chbx {
+  box-shadow: 0 0 20px wheat;
+}
+
+.forms__list_color_green {
+  --chbx-color-1: #0c0;
+  --chbx-color-2: #050;
+}
+
+.forms__list_color_blue {
+  --chbx-color-1: #08c;
+  --chbx-color-2: #025;
+}
+
+.forms__list_color_purple {
+  --chbx-color-1: #a4f;
+  --chbx-color-2: #508;
+}
+
+.forms__list_color_pink {
+  --chbx-color-1: #f8c;
+  --chbx-color-2: #845;
+}
+.forms__list_color_red {
+  --chbx-color-1: #c00;
+  --chbx-color-2: #800;
+}
+
+.forms__list_color_orange {
+  --chbx-color-1: #f70;
+  --chbx-color-2: #840;
+}
+
+.forms__list_color_yellow {
+  --chbx-color-1: #ff0;
+  --chbx-color-2: #870;
+}
+
+.forms__list_color_white {
+  --chbx-color-1: #fff;
+  --chbx-color-2: #aa5;
+}
+
+.forms__list_color_brown {
+  --chbx-color-1: #840;
+  --chbx-color-2: #420;
+}
+
+.forms__list_color_black {
+  --chbx-color-1: #330;
+  --chbx-color-2: #000;
+}
+
+@media screen and (max-width: 1090px) {
+  .forms__item_other {
+    width: calc(382px - (1090px - 100vw)/3);
+  }
+}
+
+@media screen and (max-width: 793px) {
+  .forms__item_other {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .forms__item_other {
+    width: 324px;
+  }
+}

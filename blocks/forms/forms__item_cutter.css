@@ -1,0 +1,120 @@
+.forms__item_cutter {
+  background-image: url(../../images/wood.jpg);
+  --heading-color: #fff;
+  --heading-shadow-color: #444;
+  font-size: var(--main-text-size);
+  display: flex;
+  flex-direction: column;
+}
+
+.forms__cutter {
+  background-image: url(../../images/knife720.jpg);
+  background-size: cover;
+  min-width: 290px;
+  height: 250px;
+  border: 3px solid #400;
+  border-radius: 5%;
+  box-shadow: 5px 5px 10px #222;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.forms__cutter-glow {
+  width: 250px;
+  height: 220px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: auto;
+  z-index: 2;
+}
+
+.forms__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.forms__button {
+  border: 1px solid #400;
+  background-image: radial-gradient(#f44, #400);
+  box-shadow: 5px 5px 10px #222;
+  color: #020;
+  border-radius: 50%;
+  width: 150px;
+  height: 50px;
+  position: relative;
+}
+
+.forms__button:focus {
+  box-shadow: 0 0 30px wheat;
+}
+
+.forms__radio-label {
+  height: 50px; 
+  width: 300px;
+  background-color: #400;
+  transform: rotate(45deg);
+  text-align: center;
+  font-size: 34px;
+  position: absolute;
+  z-index: 4;
+}
+
+.forms__radio-label:first-of-type {
+  left: -80px;
+  bottom: 30px;
+}
+
+.forms__radio-label:last-of-type {
+  right: -80px;
+  top: 40px;
+}
+
+.forms__radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.forms__false-radio {
+  width: 300px;
+  height: 200px;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  z-index: 3;
+  background-image: url(../../images/tomato.png);
+  background-repeat: no-repeat;
+}
+
+.forms__radio_whole:checked + .forms__false-radio {
+  background-image: url(../../images/tomato.png);
+}
+
+.forms__radio_cut:checked + .forms__false-radio {
+  background-image: url(../../images/tomatoes720.png);
+}
+
+.forms__radio:focus ~ .forms__cutter-glow {
+  background-image: radial-gradient(rgba(255, 200, 0, 1) 40%, rgba(0, 255, 0, .05) 65%);
+}
+
+@media screen and (max-width: 793px) {
+  .forms__item {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .forms__item_cutter {
+    width: 324px;
+  }
+}
