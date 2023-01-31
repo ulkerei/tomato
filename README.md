@@ -1,20 +1,23 @@
-# Проект: Помидорро!
+# Pomidorro!
 
-*"тренируйтесь на кошках"*
+*"css-challenge"*
 
-## Описание
-Создавался исключительно с целью тренировки и, дабы не выглядеть совсем уж бессмысленно, был наполнен томатами и занимательными фактами о них.  
-Оформлен китчёво в стиле 90-х, чтобы оправдать разнородность контента)  
+## About
+Made only in purpose stylization HTML-elements only by means of css.
+All the textes make not much sense, kinda "Lorem Ipsum" but about tomatoes. I used a crazy 80-90th color schema, it is little weird but very nostalgic. 
 
-## Что тут творится?
-1. Переходы и анимации (к месту и не к месту).
-2. Помидоризация чекбоксов и кнопок.
-3. Внезапная врезка видео (спасибо за совет ИИ, сгенерировавшему текст про рассаду).
-4. Распределение контента во флекс-контейнерах и грид-сетке.
-5. Адаптация под размер устройств, в.т.ч мобильных с шириной экрана от 320 px.
+## Techs
+HTML, CSS
+
+## What's going on here?
+1. Transformations and animatioins.
+2. Check-boxes and buttons tomatozation.
+3. Unexpected buitd-in you-tube video, because everybody konw that explosion makes things look better
+4. Flex and grid usage.
+5. Addaptation to different screen width.
   
-**Сайт на GitHub Pages:**  
+**GitHub Pages:**  
 https://ulkerei.github.io/tomato/index.html
 
-## Планы по доработке проекта
-Добавить событий по мере прохождения скриптов.
+## Future plans
+Multilinguate it.
